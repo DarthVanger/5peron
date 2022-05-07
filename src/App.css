@@ -6,15 +6,6 @@
   width: 100%;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0px;
-  text-align: center;
-  line-height: 1.4;
-  scroll-margin-top: 4.75rem;
-  font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-}
 
 .header {
     position: sticky;
@@ -88,4 +79,13 @@ nav {
   font-size: 2em;
   font-family: monospace;
   align-self: center;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: monospace;
+  align-self: center;
+  margin: 0px;
+  line-height: 1.4;
+  margin-top: 1em;
 }

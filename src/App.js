@@ -26,7 +26,9 @@ function App() {
         src={trainColorful}
         alt="5peron picture"
         className="peron-image" />
-      <h1>Platform 5</h1>
+
+      <h1>Volunteer organization</h1>
+
       <video width="320" height="240" controls>
          <source src={process.env.PUBLIC_URL + '/video/5peron-truck-unloading.mp4'} />
       </video>
