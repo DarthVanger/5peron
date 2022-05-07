@@ -3,7 +3,7 @@ import logo from './train-station-icon.jpg';
 import './App.css';
 import MenuSvg from './MenuSvg';
 import trainColorful from './train-colorful.jpg';
-import ukraineMapDots from './ukraine-map-dots.png';
+import ukraineMapDots from './ukraine-map-blue.jpg';
 
 function App() {
   return (
