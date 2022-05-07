@@ -6,6 +6,7 @@ import trainColorful from './train-colorful.jpg';
 import trainWide from './img/train-wide.jpeg';
 import ukraineMapDots from './ukraine-map-blue.jpg';
 import team from './team.jpg';
+import { FacebookProvider, Page } from 'react-facebook';
 
 function App() {
   return (
@@ -56,6 +57,12 @@ function App() {
         <img src={team} alt="Team picture" />
       </article>
 
+      <h2>News</h2>
+      <article>
+        <FacebookProvider appId="1438362366615245">
+          <Page href="https://www.facebook.com/5peronUA" tabs="timeline" />
+        </FacebookProvider> 
+      </article>
     </div>
   );
 }
