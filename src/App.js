@@ -28,6 +28,9 @@ function App() {
         className="peron-image" />
 
       <h1>Volunteer organization</h1>
+      <article>
+        Volunteers based in Lviv are helping refugees coming from the East of Ukraine.
+      </article>
 
       <video width="320" height="240" controls>
          <source src={process.env.PUBLIC_URL + '/video/5peron-truck-unloading.mp4'} />
