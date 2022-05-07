@@ -2,30 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .peron-image {
   width: 100%;
 }
@@ -61,13 +37,6 @@ h1 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.nav-right {
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-}
-
 .menu-svg {
   margin: 0px 0.125rem;
   width: 1.5rem;
@@ -84,4 +53,39 @@ h1 {
   outline: none;
   box-shadow: none;
   border: none;
+}
+
+.logo {
+  width: 3.5em;
+  height: 3.5em;
+}
+
+.logo-container {
+  background: white;
+  margin: 0.5rem;
+}
+
+nav {
+    height: 4.75rem;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.brand {
+  font-size: 2em;
+  font-family: monospace;
+  align-self: center;
 }
