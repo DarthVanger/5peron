@@ -3,6 +3,7 @@ import logo from './train-station-icon.jpg';
 import './App.css';
 import MenuSvg from './MenuSvg';
 import trainColorful from './train-colorful.jpg';
+import trainWide from './img/train-wide.jpeg';
 import ukraineMapDots from './ukraine-map-blue.jpg';
 import team from './team.jpg';
 
@@ -27,7 +28,14 @@ function App() {
       <img
         src={trainColorful}
         alt="5peron picture"
-        className="peron-image" />
+        className="peron-image"
+      />
+
+      <img
+        src={trainWide}
+        alt="5peron picture"
+        className="peron-image-wide"
+      />
 
       <h2>Volunteer organization</h2>
       <article>
@@ -38,11 +46,15 @@ function App() {
 
       <h2>Activities</h2>
       <h3>Unloading Humanitarian Aid</h3>
-      <video controls>
+      <article>
+        <video controls>
          <source src={process.env.PUBLIC_URL + '/video/5peron-truck-unloading.mp4'} />
-      </video>
+        </video>
+      </article>
       <h2>Team</h2>
-      <img src={team} alt="Team picture" />
+      <article>
+        <img src={team} alt="Team picture" />
+      </article>
 
     </div>
   );
