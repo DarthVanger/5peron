@@ -2,10 +2,9 @@
   text-align: center;
 }
 
-.peron-image {
+img, video {
   width: 100%;
 }
-
 
 .header {
     position: sticky;
@@ -81,13 +80,20 @@ nav {
   align-self: center;
 }
 
-h1 {
+h2 {
   font-size: 2em;
   font-family: monospace;
   align-self: center;
   margin: 0px;
   line-height: 1.4;
   margin-top: 1em;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: monospace;
+  font-size: 1.5em;
+  font-weight: normal;
 }
 
 article {

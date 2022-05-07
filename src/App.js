@@ -3,6 +3,7 @@ import logo from './train-station-icon.jpg';
 import './App.css';
 import MenuSvg from './MenuSvg';
 import trainColorful from './train-colorful.jpg';
+import ukraineMapDots from './ukraine-map-dots.png';
 
 function App() {
   return (
@@ -27,12 +28,16 @@ function App() {
         alt="5peron picture"
         className="peron-image" />
 
-      <h1>Volunteer organization</h1>
+      <h2>Volunteer organization</h2>
       <article>
         Volunteers based in Lviv are helping refugees coming from the East of Ukraine.
+
+        <img src={ukraineMapDots} />
       </article>
 
-      <video width="320" height="240" controls>
+      <h2>Activities</h2>
+      <h3>Unloading Humanitarian Aid</h3>
+      <video controls>
          <source src={process.env.PUBLIC_URL + '/video/5peron-truck-unloading.mp4'} />
       </video>
     </div>
