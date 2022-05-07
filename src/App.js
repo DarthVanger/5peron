@@ -4,6 +4,7 @@ import './App.css';
 import MenuSvg from './MenuSvg';
 import trainColorful from './train-colorful.jpg';
 import ukraineMapDots from './ukraine-map-blue.jpg';
+import team from './team.jpg';
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
       <video controls>
          <source src={process.env.PUBLIC_URL + '/video/5peron-truck-unloading.mp4'} />
       </video>
+      <h2>Team</h2>
+      <img src={team} alt="Team picture" />
+
     </div>
   );
 }
