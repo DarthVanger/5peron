@@ -39,50 +39,53 @@ function App() {
         className="peron-image-wide"
       />
 
-      <h2>Volunteer organization</h2>
-      <article>
-        <p>Volunteers based in Lviv are helping refugees coming from the East of Ukraine.</p>
+      <section className="about">
+        <article>
+          <h2>Volunteer organization</h2>
+          <p>Volunteers based in Lviv are helping refugees coming from the East of Ukraine.</p>
 
-        <img src={ukraineMapDots} />
-      </article>
+          <img src={ukraineMapDots} />
+        </article>
 
-      <h2>Volunteers of the 5th platform!</h2>
-      <article>
-        <figure>
-          <img src={building} alt="destroyed building in ukraine" />
-          <figcaption>
-            pic source: <a
-              href="https://www.dailysabah.com/arts/artists-use-nfts-to-support-ukraine-against-russian-invasion/news"
-              target="_blank"
-              rel="noref"
-            >
-              dalisabah.com/arts
-            </a>
-          </figcaption>
-        </figure>
+        <article>
+          <h2>Volunteers of the 5th platform!</h2>
+          <figure>
+            <img src={building} alt="destroyed building in ukraine" />
+            <figcaption>
+              pic source: <a
+                href="https://www.dailysabah.com/arts/artists-use-nfts-to-support-ukraine-against-russian-invasion/news"
+                target="_blank"
+                rel="noref"
+              >
+                dalisabah.com/arts
+              </a>
+            </figcaption>
+          </figure>
 
-        <p>Our <b>Life</b>, just as the life of any Ukrainian, <b>has changed</b> on February the 24th <b>due to</b> the <em>full-scale <b>invasion</b></em> of Russia into Ukraine.</p>
-      </article>
+          <p>Our <b>Life</b>, just as the life of any Ukrainian, <b>has changed</b> on February the 24th <b>due to</b> the <em>full-scale <b>invasion</b></em> of Russia into Ukraine.</p>
+        </article>
 
-      <h2>Activities</h2>
-      <h3>Unloading Humanitarian Aid</h3>
-      <article>
-        <video controls>
-         <source src={process.env.PUBLIC_URL + '/video/5peron-truck-unloading.mp4'} />
-        </video>
-      </article>
+        <article>
+          <h2>Unloading Humanitarian Aid</h2>
+          <video controls>
+           <source src={process.env.PUBLIC_URL + '/video/5peron-truck-unloading.mp4'} />
+          </video>
+        </article>
 
-      <h2>Team</h2>
-      <article>
-        <img src={team} alt="Team picture" />
-      </article>
+        <article>
+          <h2>Team</h2>
+          <img src={team} alt="Team picture" />
+        </article>
+      </section>
 
-      <h2>News</h2>
-      <article style={{textAlign: "center"}}>
-        <FacebookProvider appId="1438362366615245" >
-          <Page href="https://www.facebook.com/5peronUA" tabs="timeline" smallHeader={true} hideCTA={true} hideCover={true} showFacepile={false} />
-        </FacebookProvider> 
-      </article>
+      {/*
+        <article style={{textAlign: "center"}}>
+          <h2>News</h2>
+          <FacebookProvider appId="1438362366615245" >
+            <Page href="https://www.facebook.com/5peronUA" tabs="timeline" smallHeader={true} hideCTA={true} hideCover={true} showFacepile={false} />
+          </FacebookProvider> 
+        </article>
+    */}
     </div>
   );
 }
