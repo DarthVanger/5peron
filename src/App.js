@@ -8,6 +8,7 @@ import ukraineMapDots from './ukraine-map-blue.jpg';
 import team from './team.jpg';
 import building from './img/building-blue-yellow.jpeg';
 import { FacebookProvider, Page } from 'react-facebook';
+import { Payment } from './components/Payment';
 
 function App() {
   return (
@@ -75,6 +76,11 @@ function App() {
         <article>
           <h2>Team</h2>
           <img src={team} alt="Team picture" />
+        </article>
+
+        <article>
+          <h2>Donate</h2>
+          <Payment />
         </article>
       </section>
 
