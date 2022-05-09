@@ -140,9 +140,24 @@ article em {
   color: #264d89;
 }
 
-article > img, .peron-image, .peron-image-wide {
+article > figure, article > img, .peron-image, .peron-image-wide {
   width: 100%;
   margin-bottom: 0.5em;
   box-sizing: border-box;
 }
 
+article > figure {
+  margin: 0;
+}
+
+article figcaption {
+  text-align: center;
+  color: #777;
+  margin-top: 0.2em;
+  font-size: 0.9em;
+}
+
+article figcaption a {
+  color: #b59244;
+  text-decoration: none;
+}

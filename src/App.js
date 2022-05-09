@@ -48,7 +48,19 @@ function App() {
 
       <h2>Volunteers of the 5th platform!</h2>
       <article>
-        <img src={building} alt="destroyed building in ukraine" />
+        <figure>
+          <img src={building} alt="destroyed building in ukraine" />
+          <figcaption>
+            pic source: <a
+              href="https://www.dailysabah.com/arts/artists-use-nfts-to-support-ukraine-against-russian-invasion/news"
+              target="_blank"
+              rel="noref"
+            >
+              dalisabah.com/arts
+            </a>
+          </figcaption>
+        </figure>
+
         <p>Our <b>Life</b>, just as the life of any Ukrainian, <b>has changed</b> on February the 24th <b>due to</b> the <em>full-scale <b>invasion</b></em> of Russia into Ukraine.</p>
       </article>
 
