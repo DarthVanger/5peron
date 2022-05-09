@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { squareConfig } from './squareConfig';
 
 const styles = {
   name: {
@@ -48,8 +49,8 @@ export default class PaymentForm extends Component {
 
   componentDidMount() {
     const config = {
-      applicationId: "sq0idp-rARHLPiahkGtp6mMz2OeCA",
-      locationId: "GMT96A77XABR1",
+      applicationId: squareConfig.appId,
+      locationId: squareConfig.locationId,
       inputClass: "sq-input",
       autoBuild: false,
       inputStyles: [
