@@ -6,6 +6,7 @@ import trainColorful from './train-colorful.jpg';
 import trainWide from './img/train-wide.jpeg';
 import ukraineMapDots from './ukraine-map-blue.jpg';
 import team from './team.jpg';
+import building from './img/building-blue-yellow.jpeg';
 import { FacebookProvider, Page } from 'react-facebook';
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
 
       <h2>Volunteer organization</h2>
       <article>
-        Volunteers based in Lviv are helping refugees coming from the East of Ukraine.
+        <p>Volunteers based in Lviv are helping refugees coming from the East of Ukraine.</p>
 
         <img src={ukraineMapDots} />
       </article>
@@ -56,7 +57,11 @@ function App() {
       <article>
         <img src={team} alt="Team picture" />
       </article>
-
+      <h2>Volunteers of the 5th platform!</h2>
+      <article>
+        <img src={building} alt="destroyed building in ukraine" />
+        <p>Our <b>Life</b>, just as the life of any Ukrainian, <b>has changed</b> on February the 24th <b>due to</b> the <em>full-scale <b>invasion</b></em> of Russia into Ukraine.</p>
+      </article>
       <h2>News</h2>
       <article style={{textAlign: "center"}}>
         <FacebookProvider appId="1438362366615245" >

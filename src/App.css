@@ -23,10 +23,6 @@ article img, article video {
     width: 100%;
 }
 
-.peron-image, .peron-image-wide {
-  width: 100%;
-}
-
 @media (max-width: 490px) {
   .peron-image {
     display: block;
@@ -129,8 +125,26 @@ h3 {
 
 article {
   text-align: justify;
-  padding: 1em;
   font-family: monospace;
   font-size: 1.5em;
   line-height: 1.5;
 }
+
+article > p {
+  padding: 1em;
+}
+
+article b {
+  color: #264d89;
+}
+
+article em {
+  color: #264d89;
+}
+
+article > img, .peron-image, .peron-image-wide {
+  width: 100%;
+  margin-bottom: 0.5em;
+  box-sizing: border-box;
+}
+
