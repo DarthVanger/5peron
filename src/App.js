@@ -46,6 +46,12 @@ function App() {
         <img src={ukraineMapDots} />
       </article>
 
+      <h2>Volunteers of the 5th platform!</h2>
+      <article>
+        <img src={building} alt="destroyed building in ukraine" />
+        <p>Our <b>Life</b>, just as the life of any Ukrainian, <b>has changed</b> on February the 24th <b>due to</b> the <em>full-scale <b>invasion</b></em> of Russia into Ukraine.</p>
+      </article>
+
       <h2>Activities</h2>
       <h3>Unloading Humanitarian Aid</h3>
       <article>
@@ -53,15 +59,12 @@ function App() {
          <source src={process.env.PUBLIC_URL + '/video/5peron-truck-unloading.mp4'} />
         </video>
       </article>
+
       <h2>Team</h2>
       <article>
         <img src={team} alt="Team picture" />
       </article>
-      <h2>Volunteers of the 5th platform!</h2>
-      <article>
-        <img src={building} alt="destroyed building in ukraine" />
-        <p>Our <b>Life</b>, just as the life of any Ukrainian, <b>has changed</b> on February the 24th <b>due to</b> the <em>full-scale <b>invasion</b></em> of Russia into Ukraine.</p>
-      </article>
+
       <h2>News</h2>
       <article style={{textAlign: "center"}}>
         <FacebookProvider appId="1438362366615245" >
