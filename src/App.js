@@ -59,8 +59,8 @@ function App() {
 
       <h2>News</h2>
       <article style={{textAlign: "center"}}>
-        <FacebookProvider appId="1438362366615245">
-          <Page href="https://www.facebook.com/5peronUA" tabs="timeline" />
+        <FacebookProvider appId="1438362366615245" >
+          <Page href="https://www.facebook.com/5peronUA" tabs="timeline" smallHeader={true} hideCTA={true} hideCover={true} showFacepile={false} />
         </FacebookProvider> 
       </article>
     </div>
