@@ -5,7 +5,10 @@
   text-align: center;
   position: relative;
   /* donate image size */
-  min-height: calc(473px + var(--var-paypal-button-size));
+  /* min-height: calc(400px); */
+  /* height: 535px; */
+
+  overflow: hidden;
 }
 
 .loading {
@@ -24,13 +27,14 @@
 }
 
 .donate .button-container {
-  bottom: var(--var-paypal-button-size);
+  bottom: 0;
   z-index: -1;
 }
 
 .donate button {
-  --action-color: #c49934;
-  --action-text-color: #122f5b;
+  --action-color: #97d7f5;
+  --action-text-color: #c93a84;;
+;
 
   outline: none;
   border: none;
@@ -48,5 +52,8 @@
 
 .paypal {
   top: 0;
-  padding-bottom: var(--var-paypal-button-size);
+}
+
+img#donate-button, .image-placeholder {
+  padding-bottom: calc(var(--var-paypal-button-size) + 1em);
 }

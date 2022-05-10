@@ -1,10 +1,14 @@
 import { useEffect, useState, useRef } from 'react';
 import ukraineMapDots from '../ukraine-map-blue.jpg';
 import './Donate.css';
-import donateImg from '../img/donate.png';
+import donateImg from '../img/donate-colorful.jpeg';
+
+import {useMediaQuery, useMediaQueries} from '@react-hook/media-query'
 
 export const Donate = () => {
+  const isDesktop = useMediaQuery('only screen and (min-width: 1000px)');
 
+  console.log('isDesktop: ', isDesktop);
   const rendered = useRef();
   const [isLoading, setIsLoading] = useState(true);
 
@@ -34,6 +38,9 @@ export const Donate = () => {
 
   return (
     <div className="donate">
+      <div className="image-placeholder">
+        <img src={donateImg} alt="hearts and hands drawing" />
+      </div>
       <div className="paypal center-absolute">
         <div id="donate-button-container">
           <div id="donate-button">
