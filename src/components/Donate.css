@@ -1,4 +1,52 @@
+.donate {
+  --var-paypal-button-size: 62px;
+
+  margin-bottom: 2em;
+  text-align: center;
+  position: relative;
+  /* donate image size */
+  min-height: calc(473px + var(--var-paypal-button-size));
+}
+
 .loading {
   text-align: center;
   margin-bottom: 2em;
+}
+
+/* https://stackoverflow.com/a/18486387/1657101 */
+.center-absolute {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.donate .button-container {
+  bottom: var(--var-paypal-button-size);
+  z-index: -1;
+}
+
+.donate button {
+  --action-color: #c49934;
+  --action-text-color: #122f5b;
+
+  outline: none;
+  border: none;
+
+  background: var(--action-color);
+
+  padding: 1em;
+  border-radius: 0.5em;
+
+  color: var(--action-text-color);
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1em;
+}
+
+.paypal {
+  top: 0;
+  padding-bottom: var(--var-paypal-button-size);
 }

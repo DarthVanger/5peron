@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import ukraineMapDots from '../ukraine-map-blue.jpg';
 import './Donate.css';
+import donateImg from '../img/donate.png';
 
 export const Donate = () => {
 
@@ -22,7 +23,7 @@ export const Donate = () => {
         env:'production',
         hosted_button_id:'JLCJ8UU8Z6L5Y',
         image: {
-          src:'https://pics.paypal.com/00/s/NmU2ZmQxOWItYzFiNi00ZTliLTlhYTItMWUzOGQ4OGE1Nzli/file.PNG',
+          src: donateImg,
           alt:'Donate with PayPal button',
           title:'PayPal - The safer, easier way to pay online!',
           }
@@ -32,11 +33,18 @@ export const Donate = () => {
   }, []);
 
   return (
-    <>
-      <div id="donate-button-container">
-        <div id="donate-button">
+    <div className="donate">
+      <div className="paypal center-absolute">
+        <div id="donate-button-container">
+          <div id="donate-button">
+          </div>
         </div>
       </div>
-    </>
+      <div className="button-container center-absolute">
+        <button type="button">
+          Donate PayPal or Credit Card
+        </button>
+      </div>
+    </div>
   );
 };

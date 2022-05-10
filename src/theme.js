@@ -1,0 +1,3 @@
+export colors = {
+  action: 'red',
+};
