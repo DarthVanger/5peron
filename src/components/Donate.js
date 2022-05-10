@@ -5,6 +5,8 @@ import donateImg from '../img/donate-colorful.jpeg';
 
 import {useMediaQuery, useMediaQueries} from '@react-hook/media-query'
 
+import { GooglePay } from '../GooglePay'
+
 export const Donate = () => {
   const isDesktop = useMediaQuery('only screen and (min-width: 1000px)');
 
@@ -37,21 +39,26 @@ export const Donate = () => {
   }, []);
 
   return (
-    <div className="donate">
-      <div className="image-placeholder">
-        <img src={donateImg} alt="hearts and hands drawing" />
-      </div>
-      <div className="paypal center-absolute">
-        <div id="donate-button-container">
-          <div id="donate-button">
+    <>
+      <div className="donate">
+        <div className="image-placeholder">
+          <img src={donateImg} alt="hearts and hands drawing" />
+        </div>
+        <div className="paypal center-absolute">
+          <div id="donate-button-container">
+            <div id="donate-button">
+            </div>
           </div>
         </div>
+        <div className="button-container center-absolute">
+          <button type="button">
+            Donate with PayPal
+          </button>
+        </div>
       </div>
-      <div className="button-container center-absolute">
-        <button type="button">
-          Donate PayPal or Credit Card
-        </button>
+      <div className="google-pay-container">
+        <GooglePay className="google-pay" />
       </div>
-    </div>
+    </>
   );
 };
