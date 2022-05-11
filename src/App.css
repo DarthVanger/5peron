@@ -53,24 +53,6 @@ article img, article video {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.menu-svg {
-  margin: 0px 0.125rem;
-  width: 1.5rem;
-  height: 2.5rem;
-  position: relative;
-  stroke-width: 2px;
-  z-index: 100;
-  color: rgb(28, 28, 255);
-  stroke: rgb(28, 28, 255);
-}
-
-.menu-button {
-  background: white;
-  outline: none;
-  box-shadow: none;
-  border: none;
-}
-
 .logo {
   width: 3.5em;
   height: 3.5em;

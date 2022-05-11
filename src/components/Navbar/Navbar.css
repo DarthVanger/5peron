@@ -1,0 +1,21 @@
+nav {
+  padding-right: 1em;
+}
+
+.menu-svg {
+  margin: 0px 0.125rem;
+  width: 1.5rem;
+  height: 2.5rem;
+  position: relative;
+  stroke-width: 2px;
+  z-index: 100;
+  stroke: black;
+}
+
+.menu-button {
+  background: white;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
