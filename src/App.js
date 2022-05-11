@@ -11,6 +11,7 @@ import {Helmet} from 'react-helmet';
 import ReactGA from 'react-ga';
 import { Navbar } from './components/Navbar/Navbar';
 import { AboutArticle } from './components/articles/AboutArticle';
+import { CommunityArticle } from './components/articles/CommunityArticle';
 
 ReactGA.initialize('G-CSRZL2T03W');
 
@@ -89,6 +90,8 @@ function App() {
             <img src={team} alt="Team picture" />
           </article>
         </section>
+
+        <CommunityArticle />
 
         <article>
           <h2>Donate</h2>
