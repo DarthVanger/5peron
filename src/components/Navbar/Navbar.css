@@ -1,5 +1,21 @@
+nav, .nav-placeholder {
+    height: 4.75rem;
+}
+
 nav {
-  padding-right: 1em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding-right: 1em;
 }
 
 .menu-svg {

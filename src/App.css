@@ -41,18 +41,6 @@ article img, article video {
   }
 }
 
-.header > nav {
-    color: rgb(51, 51, 51);
-    height: 4.75rem;
-    padding: 1rem 2rem;
-    box-sizing: border-box;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
 .logo {
   width: 3.5em;
   height: 3.5em;
@@ -63,17 +51,6 @@ article img, article video {
   margin: 0.5rem;
 }
 
-nav {
-    height: 4.75rem;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: space-between;
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    align-items: center;
-}
 
 .logo-link {
     text-decoration: none;

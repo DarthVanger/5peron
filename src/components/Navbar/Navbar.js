@@ -18,6 +18,7 @@ export const Navbar = () => {
 
   return (
     <>
+      <div className="nav-placeholder"></div>
       <nav>
         <div className="logo-container">
           <img src={logo} alt="logo" className="logo" />
