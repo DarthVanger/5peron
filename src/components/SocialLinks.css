@@ -6,13 +6,14 @@
 
 .social-links a {
   width: 128px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-decoration: none;
   color: #01437d;
   font-family: monospace;
   text-align: center;
   letter-spacing: 4px;
   font-weight: bold;
+  margin: 0 1em;
 }
 
 .social-links img {

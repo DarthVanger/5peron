@@ -39,7 +39,6 @@ export const Menu = ({ isOpen, onClose }) => {
       </ul>
 
       <SocialLinks />
-      
     </aside>
   )
 };

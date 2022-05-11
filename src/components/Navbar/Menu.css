@@ -14,6 +14,9 @@ aside {
   padding: 1em;
   padding-top: 8px;
   min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 @media (max-width: 600px) {
@@ -58,4 +61,12 @@ svg.close-icon {
 svg.close-icon line {
   stroke: black;
   stroke-width: 0.5em;
+}
+
+aside ul {
+  flex-grow: 1;
+}
+
+aside .social-links {
+  flex-shrink: 0;
 }
