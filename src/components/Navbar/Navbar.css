@@ -3,24 +3,25 @@ nav, .nav-placeholder {
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: space-between;
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    align-items: center;
-    padding-right: 1em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.top-nav {
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-pack: center;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  align-items: stretch;
+  padding-right: 1em;
 }
 
 .menu-svg {
-  margin: 0px 0.125rem;
-  width: 1.5rem;
+  width: 36px;
   height: 2.5rem;
   position: relative;
   stroke-width: 2px;
@@ -34,5 +35,35 @@ nav {
   outline: none;
   box-shadow: none;
   border: none;
+  padding: 0;
 }
 
+
+.logo {
+  width: 3.5em;
+  height: 3.5em;
+}
+
+.logo-container {
+  background: white;
+  margin: 0.5rem;
+}
+
+
+.logo-link {
+    text-decoration: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.brand {
+  flex-grow: 1;
+  font-size: 2em;
+  font-family: monospace;
+  align-self: center;
+}
+
+.nav-right {
+  align-self: center;
+}

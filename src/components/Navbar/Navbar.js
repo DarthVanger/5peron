@@ -19,14 +19,14 @@ export const Navbar = () => {
   return (
     <>
       <div className="nav-placeholder"></div>
-      <nav>
+      <nav className="top-nav">
         <div className="logo-container">
           <img src={logo} alt="logo" className="logo" />
         </div>
         <div className="brand">
           Platform Five
         </div>
-        <div>
+        <div className="nav-right">
           <button
             aria-label="Toggle menu button"
             className="menu-button"

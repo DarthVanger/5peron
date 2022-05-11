@@ -19,19 +19,23 @@ export const Menu = ({ isOpen, onClose }) => {
 
   return (
     <aside ref={wrapperRef}>
-      <header>
-        <img className="logo" src={logo} alt="railway playform icon" />
+      <nav className="top-nav">
+        <div className="logo-container">
+          <img className="logo" src={logo} alt="railway playform icon" />
+        </div>
         <div className="brand">
           Platform Five
         </div>
-        <svg
-          className="close-icon" viewBox="0 0 100 100" 
-          onClick={onClose}
-        >
-          <line x1="0" y1="0" x2="100" y2="100" />
-          <line x1="0" y1="100" x2="100" y2="0" />
-        </svg>
-      </header>
+        <div className="nav-right">
+          <svg
+            className="close-icon" viewBox="0 0 100 100" 
+            onClick={onClose}
+          >
+            <line x1="0" y1="0" x2="100" y2="100" />
+            <line x1="0" y1="100" x2="100" y2="0" />
+          </svg>
+        </div>
+      </nav>
       <ul>
         <LinkItem href="#about">About</LinkItem>
         <LinkItem href="#dear-volunteers">Volunteers</LinkItem>
