@@ -21,6 +21,9 @@ export const Menu = ({ isOpen, onClose }) => {
     <aside ref={wrapperRef}>
       <header>
         <img className="logo" src={logo} alt="railway playform icon" />
+        <div className="brand">
+          Platform Five
+        </div>
         <svg
           className="close-icon" viewBox="0 0 100 100" 
           onClick={onClose}
