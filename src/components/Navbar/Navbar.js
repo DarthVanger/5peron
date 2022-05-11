@@ -19,7 +19,7 @@ export const Navbar = () => {
   return (
     <>
       <div className="nav-placeholder"></div>
-      <nav className="top-nav">
+      <nav className="top-nav fixed-nav">
         <div className="logo-container">
           <img src={logo} alt="logo" className="logo" />
         </div>

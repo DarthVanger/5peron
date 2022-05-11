@@ -11,9 +11,7 @@ aside {
   bottom: 0;
   z-index: 100;
   background: white;
-  padding: 1em;
-  padding-top: 8px;
-  min-width: 200px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -25,7 +23,7 @@ aside {
   }
 }
 
-aside header {
+aside nav {
   display: flex;
   justify-content: space-between;
 }

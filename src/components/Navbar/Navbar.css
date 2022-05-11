@@ -2,7 +2,7 @@ nav, .nav-placeholder {
     height: 4.75rem;
 }
 
-nav {
+.fixed-nav {
   position: fixed;
   top: 0;
   right: 0;
@@ -66,4 +66,6 @@ nav {
 
 .nav-right {
   align-self: center;
+  height: 36px;
+  width: 36px;
 }
