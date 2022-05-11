@@ -89,14 +89,14 @@ function App() {
             <h2>Team</h2>
             <img src={team} alt="Team picture" />
           </article>
-        </section>
+        
+          <CommunityArticle />
 
-        <CommunityArticle />
-
-        <article id="donate">
-          <h2>Donate</h2>
-          <Donate />
-        </article>
+          <article id="donate">
+            <h2>Donate</h2>
+            <Donate />
+          </article>
+          </section>
       </div>
     </>
   );

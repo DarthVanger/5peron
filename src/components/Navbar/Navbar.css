@@ -26,6 +26,7 @@ nav {
   stroke-width: 2px;
   z-index: 100;
   stroke: black;
+  cursor: pointer;
 }
 
 .menu-button {

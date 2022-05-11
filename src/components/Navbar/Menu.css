@@ -53,6 +53,7 @@ aside .fb-link img {
 }
 
 svg.close-icon {
+  cursor: pointer;
   width: 2em;
   height: 2em;
   margin: 1em 0;

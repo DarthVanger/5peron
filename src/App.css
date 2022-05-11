@@ -1,6 +1,8 @@
 html, body {
   padding: 0;
   margin: 0;
+
+  --navbar-height: 76px;
 }
 
 .App {
@@ -87,6 +89,7 @@ article {
   font-family: monospace;
   font-size: 1.5em;
   line-height: 1.5;
+  scroll-margin-top: calc(var(--navbar-height));
 }
 
 article > p {
