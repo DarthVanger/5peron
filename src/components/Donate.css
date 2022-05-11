@@ -1,14 +1,11 @@
 .donate {
-  --var-paypal-button-size: 62px;
-
   margin-bottom: 2em;
   text-align: center;
-  position: relative;
-  /* donate image size */
-  /* min-height: calc(400px); */
-  /* height: 535px; */
+}
 
-  overflow: hidden;
+
+.donate img {
+  max-height: 219px;
 }
 
 .loading {
@@ -50,13 +47,6 @@
   font-size: 1em;
 }
 
-.paypal {
-  top: 0;
-}
-
-img#donate-button, .image-placeholder {
-  padding-bottom: calc(var(--var-paypal-button-size) + 1em);
-}
 
 .google-pay-container {
   text-align: center;
