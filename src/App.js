@@ -60,7 +60,7 @@ function App() {
         <section className="about">
           <AboutArticle />
 
-          <article>
+          <article id="dear-volunteers">
             <h2>Volunteers of the 5th platform!</h2>
             <figure>
               <img src={building} alt="destroyed building in ukraine" />
@@ -78,14 +78,14 @@ function App() {
             <p>Our <b>Life</b>, just as the life of any Ukrainian, <b>has changed</b> on February the 24th <b>due to</b> the <em>full-scale <b>invasion</b></em> of Russia into Ukraine.</p>
           </article>
 
-          <article>
+          <article id="unloading-humanitarian-aid">
             <h2>Unloading Humanitarian Aid</h2>
             <video controls>
              <source src={process.env.PUBLIC_URL + '/video/5peron-truck-unloading.mp4'} />
             </video>
           </article>
 
-          <article>
+          <article id="team">
             <h2>Team</h2>
             <img src={team} alt="Team picture" />
           </article>
@@ -93,7 +93,7 @@ function App() {
 
         <CommunityArticle />
 
-        <article>
+        <article id="donate">
           <h2>Donate</h2>
           <Donate />
         </article>

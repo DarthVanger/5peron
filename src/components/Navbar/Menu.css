@@ -1,9 +1,61 @@
+img.logo {
+  display: block;
+  height: 56px;
+  margin-bottom: 1em;
+}
+
 aside {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
+  z-index: 100;
   background: white;
-  max-width: 320px;
   padding: 1em;
+  padding-top: 8px;
+  min-width: 200px;
+}
+
+@media (max-width: 600px) {
+  aside {
+    right: 0;
+  }
+}
+
+aside header {
+  display: flex;
+  justify-content: space-between;
+}
+
+aside ul {
+   list-style-type: none;
+   padding: 0;
+   text-align: left;
+}
+
+aside li {
+  padding: 0.5em;
+}
+
+aside a {
+  text-decoration: none;
+  color: #017c92;
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+aside .fb-link img {
+  width: 64px;
+  height: 64px;
+}
+
+svg.close-icon {
+  width: 2em;
+  height: 2em;
+  margin: 1em 0;
+}
+
+svg.close-icon line {
+  stroke: black;
+  stroke-width: 0.5em;
 }
