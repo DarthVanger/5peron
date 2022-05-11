@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
-import logo from './train-station-icon.jpg';
+import TagManager from 'react-gtm-module';
 //import srcVideo from '../public/video/5peron-truck-unloading.mp4';
 import './App.css';
-import MenuSvg from './MenuSvg';
 import trainColorful from './train-colorful.jpg';
 import trainWide from './img/train-wide.jpeg';
 import ukraineMapDots from './ukraine-map-blue.jpg';
@@ -11,7 +10,7 @@ import building from './img/building-blue-yellow.jpeg';
 import { Donate } from './components/Donate';
 import {Helmet} from 'react-helmet';
 import ReactGA from 'react-ga';
-import TagManager from 'react-gtm-module';
+import { Navbar } from './components/Navbar/Navbar';
 
 ReactGA.initialize('G-CSRZL2T03W');
 
@@ -43,19 +42,7 @@ function App() {
       </Helmet>
       <div className="App">
         <header>
-          <nav>
-            <div className="logo-container">
-              <img src={logo} alt="logo" className="logo" />
-            </div>
-            <div className="brand">
-              Platform Five
-            </div>
-            <div className="nav-right">
-              <button aria-label="Toggle menu button" className="menu-button">
-                <MenuSvg />
-              </button>
-            </div>
-          </nav>
+          <Navbar />
         </header>
         <img
           src={trainColorful}
