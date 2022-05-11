@@ -75,7 +75,7 @@ function App() {
               </figcaption>
             </figure>
 
-            <p>Our <b>Life</b>, just as the life of any Ukrainian, <b>has changed</b> on February the 24th <b>due to</b> the <em>full-scale <b>invasion</b></em> of Russia into Ukraine.</p>
+            <p>Our Life, just as the life of any Ukrainian, has changed on February the 24th due to the full-scale invasion of Russia into Ukraine.</p>
           </article>
 
           <article id="unloading-humanitarian-aid">
