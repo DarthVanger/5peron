@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from 'react';
-import ukraineMapDots from '../ukraine-map-blue.jpg';
 import './Donate.css';
 import donateImg from '../img/donate-colorful.jpeg';
 

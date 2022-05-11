@@ -4,13 +4,13 @@ import TagManager from 'react-gtm-module';
 import './App.css';
 import trainColorful from './train-colorful.jpg';
 import trainWide from './img/train-wide.jpeg';
-import ukraineMapDots from './ukraine-map-blue.jpg';
 import team from './team.jpg';
 import building from './img/building-blue-yellow.jpeg';
 import { Donate } from './components/Donate';
 import {Helmet} from 'react-helmet';
 import ReactGA from 'react-ga';
 import { Navbar } from './components/Navbar/Navbar';
+import { AboutArticle } from './components/articles/AboutArticle';
 
 ReactGA.initialize('G-CSRZL2T03W');
 
@@ -57,12 +57,7 @@ function App() {
         />
 
         <section className="about">
-          <article>
-            <h2>Volunteer organization</h2>
-            <p>Volunteers based in Lviv are helping refugees coming from the East of Ukraine.</p>
-
-            <img src={ukraineMapDots} />
-          </article>
+          <AboutArticle />
 
           <article>
             <h2>Volunteers of the 5th platform!</h2>
