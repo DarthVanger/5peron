@@ -5,6 +5,7 @@ import './App.css';
 import trainColorful from './train-colorful.jpg';
 import trainWide from './img/train-wide.jpeg';
 import team from './team.jpg';
+import teamZhenia from './components/articles/team-zhenia.jpeg';
 import building from './img/building-blue-yellow.jpeg';
 import { Donate } from './components/Donate';
 import {Helmet} from 'react-helmet';
@@ -98,6 +99,7 @@ function App() {
           <article id="team">
             <h2>Team</h2>
             <img src={team} alt="Team picture" />
+            <img src={teamZhenia} alt="Team picture: Zhenia" />
           </article>
 
           <article>
