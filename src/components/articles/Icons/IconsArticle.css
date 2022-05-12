@@ -1,0 +1,24 @@
+.icons-article  {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.icon-card {
+  margin: 0;
+  width: 150px;
+}
+
+.icon-card figcaption {
+  color: black;
+}
