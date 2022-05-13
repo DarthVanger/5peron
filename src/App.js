@@ -99,19 +99,20 @@ function App() {
           <article id="team">
             <h2>Team</h2>
             <img src={team} alt="Team picture" />
-            <img src={teamZhenia} alt="Team picture: Zhenia" />
           </article>
 
           <article>
+            <h2>Team</h2>
+            <img src={teamZhenia} alt="Team picture: Zhenia" />
           </article>
-        
+
           <CommunityArticle />
 
           <article id="donate">
             <h2>Donate</h2>
             <Donate />
           </article>
-          </section>
+        </section>
       </div>
     </>
   );
