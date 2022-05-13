@@ -13,7 +13,6 @@ import ReactGA from 'react-ga';
 import { Navbar } from './components/Navbar/Navbar';
 import { AboutArticle } from './components/articles/AboutArticle';
 import { CommunityArticle } from './components/articles/CommunityArticle';
-import { HelpingBabushkaArticle } from './components/articles/HelpingBabushkaArticle';
 import { HostingRefugees } from './components/articles/HostingRefugees';
 
 ReactGA.initialize('G-CSRZL2T03W');
@@ -84,8 +83,6 @@ function App() {
             <p>Our Life, just as the life of any Ukrainian, has changed on February the 24th due to the full-scale invasion of Russia into Ukraine.</p>
           </article>
 
-
-          <HelpingBabushkaArticle />
 
           <article id="unloading-humanitarian-aid">
             <h2>Unloading Humanitarian Aid</h2>
