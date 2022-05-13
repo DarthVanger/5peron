@@ -1,0 +1,20 @@
+article#infographics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#infographics img {
+  height: 64px;
+}
+
+#infographics figcaption {
+  width: 200px;
+  margin: auto;
+}
+
+#infographics .icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

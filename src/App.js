@@ -14,6 +14,7 @@ import { Navbar } from './components/Navbar/Navbar';
 import { AboutArticle } from './components/articles/AboutArticle';
 import { CommunityArticle } from './components/articles/CommunityArticle';
 import { HostingRefugees } from './components/articles/HostingRefugees';
+import { Infographics } from './components/articles/Infographics/Infographics';
 
 ReactGA.initialize('G-CSRZL2T03W');
 
@@ -62,6 +63,8 @@ function App() {
         <section className="about">
           <AboutArticle />
 
+          <Infographics />
+
           <HostingRefugees />
 
           <article id="dear-volunteers">
@@ -81,16 +84,6 @@ function App() {
 
 
             <p>Our Life, just as the life of any Ukrainian, has changed on February the 24th due to the full-scale invasion of Russia into Ukraine.</p>
-          </article>
-
-
-          <article id="unloading-humanitarian-aid">
-            <h2>Unloading Humanitarian Aid</h2>
-            <div className="video video-horizontal">
-              <video controls>
-               <source src={process.env.PUBLIC_URL + '/video/5peron-truck-unloading.mp4'} />
-              </video>
-            </div>
           </article>
 
           <article id="team">
