@@ -69,6 +69,11 @@ function App() {
 
           <article id="dear-volunteers">
             <h2>Volunteers of the 5th platform!</h2>
+
+            <p>
+              Our Life, just as the life of any Ukrainian, has changed on February the 24th due to the full-scale invasion of Russia into Ukraine.
+            </p>
+
             <figure>
               <img src={building} alt="destroyed building in ukraine" />
               <figcaption>
@@ -82,8 +87,6 @@ function App() {
               </figcaption>
             </figure>
 
-
-            <p>Our Life, just as the life of any Ukrainian, has changed on February the 24th due to the full-scale invasion of Russia into Ukraine.</p>
           </article>
 
           <article id="team">
