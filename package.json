@@ -12,9 +12,6 @@
     "forever": "^4.0.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-facebook": "^8.1.4",
-    "react-ga": "^3.3.0",
-    "react-gtm-module": "^2.0.11",
     "react-helmet": "^6.1.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"

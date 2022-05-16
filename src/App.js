@@ -1,6 +1,4 @@
 import { useEffect } from 'react';
-import TagManager from 'react-gtm-module';
-//import srcVideo from '../public/video/5peron-truck-unloading.mp4';
 import './App.css';
 import trainColorful from './train-colorful.jpg';
 import trainWide from './img/train-wide.jpeg';
@@ -9,7 +7,6 @@ import teamZhenia from './components/articles/team-zhenia.jpeg';
 import building from './img/building-blue-yellow.jpeg';
 import { Donate } from './components/Donate';
 import {Helmet} from 'react-helmet';
-import ReactGA from 'react-ga';
 import { Navbar } from './components/Navbar/Navbar';
 import { AboutArticle } from './components/articles/AboutArticle';
 import { CommunityArticle } from './components/articles/CommunityArticle';
@@ -17,25 +14,8 @@ import { HostingRefugees } from './components/articles/HostingRefugees';
 import { Infographics } from './components/articles/Infographics/Infographics';
 import { IconsArticle } from './components/articles/Icons/IconsArticle';
 
-ReactGA.initialize('G-CSRZL2T03W');
-
-const tagManagerArgs = {
-  gtmId: 'GTM-M3BCRSN',
-};
-
-TagManager.initialize(tagManagerArgs)
-
 function App() {
   const description = 'Platform Five Volunteer Organizaton. We are helping refugees in Lviv, Ukraine';
-
-  useEffect(() => {
-    //window.dataLayer = window.dataLayer || [];
-    //function gtag(){window.dataLayer.push(arguments);}
-    //gtag('js', new Date());
-
-    //gtag('config', 'G-CSRZL2T03W');
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
 
   return (
     <>
