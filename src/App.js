@@ -6,7 +6,6 @@ import team from './team.jpg';
 import teamZhenia from './components/articles/team-zhenia.jpeg';
 import building from './img/building-blue-yellow.jpeg';
 import { Donate } from './components/Donate';
-import {Helmet} from 'react-helmet';
 import { Navbar } from './components/Navbar/Navbar';
 import { AboutArticle } from './components/articles/AboutArticle';
 import { CommunityArticle } from './components/articles/CommunityArticle';
@@ -15,60 +14,50 @@ import { Infographics } from './components/articles/Infographics/Infographics';
 import { IconsArticle } from './components/articles/Icons/IconsArticle';
 
 function App() {
-  const description = 'Platform Five Volunteer Organizaton. We are helping refugees in Lviv, Ukraine';
-
   return (
-    <>
-      <Helmet>
-        <title>Platform Five Volunteer Org</title>
-        <meta name="description" content={description} />
-        <head>
-        </head>
-      </Helmet>
-      <div className="App">
-        <header>
-          <Navbar />
-        </header>
-        <img
-          src={trainColorful}
-          alt="5peron picture"
-          className="peron-image"
-        />
+    <div className="App">
+      <header>
+        <Navbar />
+      </header>
+      <img
+        src={trainColorful}
+        alt="5peron picture"
+        className="peron-image"
+      />
 
-        <img
-          src={trainWide}
-          alt="5peron picture"
-          className="peron-image-wide"
-        />
+      <img
+        src={trainWide}
+        alt="5peron picture"
+        className="peron-image-wide"
+      />
 
-        <section className="about">
-          <AboutArticle />
+      <section className="about">
+        <AboutArticle />
 
-          <IconsArticle />
+        <IconsArticle />
 
-          <Infographics />
+        <Infographics />
 
-          <HostingRefugees />
+        <HostingRefugees />
 
-          <article id="team">
-            <h2>Team</h2>
-            <img src={team} alt="Team picture" />
-          </article>
+        <article id="team">
+          <h2>Team</h2>
+          <img src={team} alt="Team picture" />
+        </article>
 
-          <article>
-            <h2>Team</h2>
-            <img src={teamZhenia} alt="Team picture: Zhenia" />
-          </article>
+        <article>
+          <h2>Team</h2>
+          <img src={teamZhenia} alt="Team picture: Zhenia" />
+        </article>
 
-          <CommunityArticle />
+        <CommunityArticle />
 
-          <article id="donate">
-            <h2>Donate</h2>
-            <Donate />
-          </article>
-        </section>
-      </div>
-    </>
+        <article id="donate">
+          <h2>Donate</h2>
+          <Donate />
+        </article>
+      </section>
+    </div>
   );
 }
 
