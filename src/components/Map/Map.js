@@ -1,112 +1,42 @@
-import { useEffect, useState } from 'react';
-import { flushSync } from 'react-dom';
-import { token } from './config';
+import { useEffect, useState, useRef } from 'react';
 import icon from '../insta-icon.png';
 
-import ReactMapboxGl, { Layer, Feature, Marker, Popup } from 'react-mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
-
-import { GeoJSONLayer } from "react-mapbox-gl";
-
-const geojson = {
-  "geojson-marker": {
-    "type": "geojson",
-    "data": {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [-77.0323, 38.9131]
-        },
-        "properties": {
-            "title": "Mapbox DC",
-            "marker-symbol": "monument"
-        }
-    }
-  }
-};
-
-
-<GeoJSONLayer
-  data={geojson}
-  symbolLayout={{
-    "text-field": "{place}",
-    "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-    "text-offset": [0, 0.6],
-    "text-anchor": "top"
-  }}
-/>
-
-
-const Mapbox = ReactMapboxGl({
-  accessToken: token,
-});
-
 export const Map = () => {
-  const [markers, setMarkers] = useState([]);
+  const ref = useRef(null);
+  const [map, setMap] = useState();
 
-  const handleClick = (event) => {
-    const coordinates = [event.lngLat.lng, event.lngLat.lat];
-    console.log('coords', coordinates);
+  console.log('render map');
+  useEffect(() => {
+    if (ref.current && !map) {
+      console.log('set map');
+      console.log('ref.current: ', ref.current);
+      // https://stackoverflow.com/questions/11749742/google-maps-api-v3-gray-box-no-map
+      var latlng = new window.google.maps.LatLng(-34.397, 150.644);
+      var mapOptions = 
+      {
+          zoom: 8,
+          center:latlng,
+          //backgroundColor: '#ff0000',
+          mapTypeId: window.google.maps.MapTypeId.ROADMAP,
+          //imageDefaultUI: true
+      };
+      setMap(new window.google.maps.Map(ref.current, mapOptions));
+    }
+  }, [ref, map]);
 
-    setMarkers(prevValue => [...prevValue, coordinates]);
-  };
+  //useEffect(() => {
+  //  setTimeout(() => {
+  //    if (ref.current && !map) {
+  //      console.log('set map');
+  //      setMap(new window.google.maps.Map(ref.current, {}));
+  //      setTimeout(() => {
+  //        window.google.maps.event.trigger(map, 'resize');
+  //      }, 1000);
+  //    }
+  //  }, 2000);
+  //}, [map]);
 
-  const geojson = {
-    type: 'FeatureCollection',
-    features: markers.map(coordinates => ({
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates,
-      },
-      properties: {
-        title: 'Mapbox',
-        description: 'Washington, D.C.'
-      }
-    })),
-  };
-
-  console.log('markers: ', markers);
   return (
-    <>
-      <div onClick={handleClick}>TESTO</div>
-      <div id="cont">
-      </div>
-      <Mapbox
-        style="mapbox://styles/mapbox/streets-v9"
-        containerStyle={{
-          height: '50vh',
-          width: '100vw'
-        }}
-        onClick={(a, e) => {handleClick(e)}}
-      >
-        <Layer type="symbol" id="marker" layout={{ 'icon-image': 'marker-15' }}>
-          <Feature coordinates={[-0.481747846041145, 51.3233379650232]} />
-          <Popup
-            coordinates={[-0.1987661557630247, 51.53937822528519]}
-            offset={{
-              'bottom-left': [12, -38],  'bottom': [0, -38], 'bottom-right': [-12, -38]
-            }}>
-            <h1>Popup</h1>
-          </Popup>
-          {markers.map(loc => (
-            <Marker coordinates={loc} key={Math.random()}>
-              <div id="test" />
-              asdf
-              <img src={icon} />
-            </Marker>
-          ))}
-        </Layer>
-        <GeoJSONLayer data={geojson}
-          symbolLayout={{
-            "text-field": "{place}",
-            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-            "text-offset": [0, 0.6],
-            "text-anchor": "top"
-          }}
-        />
-
-      </Mapbox>
-    </>
+    <div ref={ref} style={{height: '100vh', width: '100wv' }} />
   );
 };
