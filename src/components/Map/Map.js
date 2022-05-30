@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import icon from '../insta-icon.png';
 import useDeepCompareEffect from 'use-deep-compare-effect'
 
 export const Map = ({
