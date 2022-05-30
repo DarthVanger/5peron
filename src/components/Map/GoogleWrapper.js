@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import { Map } from './Map';
 import { Marker } from './Marker';
+import icon from '../pon4.png';
 
 const apiKey = 'AIzaSyA2UDFg1D25cvlIZICfzo9peR4cfoxo_Lg';
 
@@ -36,7 +37,9 @@ export const GoogleWrapper  = () => {
         onIdle={onIdle}
         zoom={zoom}
       >
-        {clicks.map((latLng, i) => (<Marker key={i} position={latLng} />))}
+        {clicks.map((latLng, i) => (
+          <Marker key={i} position={latLng} icon={icon} />
+        ))}
       </Map>
     </Wrapper>
   );
