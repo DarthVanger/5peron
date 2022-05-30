@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import { Map } from './Map';
 import { Marker } from './Marker';
-import icon from '../pon4.png';
 
 const apiKey = 'AIzaSyA2UDFg1D25cvlIZICfzo9peR4cfoxo_Lg';
 
@@ -18,9 +17,17 @@ export const GoogleWrapper  = () => {
     lng: 0,
   });
 
+  const markerRefs = useRef();
+
+  const now = new Date();
+  const date = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+
   const onClick = (e) => {
     // avoid directly mutating state
-    setClicks([...clicks, e.latLng]);
+    setClicks([...clicks, {
+      date,
+      position: e.latLng
+    }]);
   };
 
   const onIdle = (m) => {
@@ -36,9 +43,10 @@ export const GoogleWrapper  = () => {
         onClick={onClick}
         onIdle={onIdle}
         zoom={zoom}
+        markerRefs={markerRefs}
       >
-        {clicks.map((latLng, i) => (
-          <Marker key={i} position={latLng} icon={icon} />
+        {clicks.map(({ date, position },  i) => (
+          <Marker key={i} position={position} date={date} />
         ))}
       </Map>
     </Wrapper>

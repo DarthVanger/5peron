@@ -6,6 +6,7 @@ export const Map = ({
   onIdle,
   children,
   style,
+  markerRefs,
   ...options
 }) => {
   const ref = useRef(null);
@@ -33,7 +34,7 @@ export const Map = ({
         map.addListener("idle", () => onIdle(map));
       }
     }
-}, [map, onClick, onIdle]);
+  }, [map, onClick, onIdle]);
 
   useEffect(() => {
     if (ref.current && !map) {
