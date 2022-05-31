@@ -19,8 +19,7 @@ export const GoogleWrapper  = () => {
 
   const markerRefs = useRef();
 
-  const now = new Date();
-  const date = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+  const date = (new Date()).toISOString();
 
   const onClick = (e) => {
     // avoid directly mutating state
@@ -37,18 +36,27 @@ export const GoogleWrapper  = () => {
   };
 
   return (
-    <Wrapper apiKey={apiKey} render={render}>
-      <Map
-        center={center}
-        onClick={onClick}
-        onIdle={onIdle}
-        zoom={zoom}
-        markerRefs={markerRefs}
-      >
+    <>
+      <ul>
         {clicks.map(({ date, position },  i) => (
-          <Marker key={i} position={position} date={date} />
+          <li key={i}>
+            {date} {position.lat()} {position.lng()}
+          </li>
         ))}
-      </Map>
-    </Wrapper>
+      </ul>
+      <Wrapper apiKey={apiKey} render={render}>
+        <Map
+          center={center}
+          onClick={onClick}
+          onIdle={onIdle}
+          zoom={zoom}
+          markerRefs={markerRefs}
+        >
+          {clicks.map(({ date, position },  i) => (
+            <Marker key={i} position={position} date={date} />
+          ))}
+        </Map>
+      </Wrapper>
+    </>
   );
 };

@@ -14,9 +14,10 @@ export const Marker = ({ map, position, key, date }) => {
   });
 
   const handleMouseEnter = (e) => {
+    const datee = new Date(date);
     setOptions(prevState => ({
       ...prevState,
-      label: `${date}`,
+      label: `${datee.getHours()}:${datee.getMinutes()}:${datee.getSeconds()}`,
       icon: white,
     }));
   };
