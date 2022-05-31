@@ -29,6 +29,10 @@ export const GoogleWrapper  = () => {
     }]);
   };
 
+  const removeClick = (click) => {
+    setClicks(clicks.filter(c => c.date !== click. date));
+  };
+
   const onIdle = (m) => {
     console.log("onIdle");
     setZoom(m.getZoom());
@@ -53,7 +57,7 @@ export const GoogleWrapper  = () => {
           markerRefs={markerRefs}
         >
           {clicks.map(({ date, position },  i) => (
-            <Marker key={i} position={position} date={date} />
+            <Marker key={i} position={position} date={date} onClick={removeClick} />
           ))}
         </Map>
       </Wrapper>
