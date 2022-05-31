@@ -25,7 +25,8 @@ export const GoogleWrapper  = () => {
     // avoid directly mutating state
     setClicks([...clicks, {
       date,
-      position: e.latLng
+      position: e.latLng,
+      id: clicks.length,
     }]);
   };
 
@@ -56,8 +57,8 @@ export const GoogleWrapper  = () => {
           zoom={zoom}
           markerRefs={markerRefs}
         >
-          {clicks.map(({ date, position },  i) => (
-            <Marker key={i} position={position} date={date} onClick={removeClick} />
+          {clicks.map(({ date, position, id }) => (
+            <Marker key={date} id={id} position={position} date={date} onClick={removeClick} />
           ))}
         </Map>
       </Wrapper>

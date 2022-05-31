@@ -2,7 +2,7 @@ import React from 'react';
 import icon from '../pon4.png';
 import white from '../white.png';
 
-export const Marker = ({ map, position, key, date, onClick }) => {
+export const Marker = ({ map, position, key, id, date, onClick }) => {
   const [marker, setMarker] = React.useState();
 
   const click = { position, date };
@@ -18,7 +18,7 @@ export const Marker = ({ map, position, key, date, onClick }) => {
   const handleMouseEnter = (e) => {
     setOptions(prevState => ({
       ...prevState,
-      label: date.replace(/T.+/, ''),
+      label: '#' + id + ' ' + date.replace(/T.+/, ''),
       icon: white,
     }));
   };
