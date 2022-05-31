@@ -16,10 +16,9 @@ export const Marker = ({ map, position, key, date, onClick }) => {
   });
 
   const handleMouseEnter = (e) => {
-    const datee = new Date(date);
     setOptions(prevState => ({
       ...prevState,
-      label: `${datee.getHours()}:${datee.getMinutes()}:${datee.getSeconds()}`,
+      label: date.replace(/T.+/, ''),
       icon: white,
     }));
   };
