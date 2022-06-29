@@ -1,7 +1,7 @@
 import './Navbar.css';
 import { useState } from 'react';
 
-import logo from './train-station-icon.jpg';
+import logo from './logo_svg.svg';
 import MenuSvg from './MenuSvg';
 import { Menu } from './Menu';
 
@@ -23,10 +23,10 @@ export const Navbar = () => {
         <div className="logo-container">
           <img src={logo} alt="logo" className="logo" />
         </div>
-        <div className="brand">
-          Platform Five
-        </div>
         <div className="nav-right">
+          <div className="brand">
+            Platform Five
+          </div>
           <button
             aria-label="Toggle menu button"
             className="menu-button"

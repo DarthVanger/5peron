@@ -32,22 +32,10 @@ article video {
     width: 100%;
 }
 
-@media (max-width: 490px) {
-  .peron-image {
-    display: block;
-  }
-  .peron-image-wide {
-    display: none;
-  }
-}
-
-@media (min-width: 491px) {
-  .peron-image {
-    display: none;
-  }
-  .peron-image-wide {
-    display: block;
-  }
+.banner-image {
+  display: block;
+  width: auto;
+  height: 500px;
 }
 
 h2 {

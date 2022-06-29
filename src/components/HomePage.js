@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
-import trainColorful from '../train-colorful.jpg';
+// import { Link } from "react-router-dom";
+import trainColorful from '../img/train-colorful.jpg';
 import trainWide from '../img/train-wide.jpeg';
 import team from '../team.jpg';
 import teamZhenia from '../components/articles/team-zhenia.jpeg';
-import building from '../img/building-blue-yellow.jpeg';
+// import building from '../img/building-blue-yellow.jpeg';
 import { Donate } from '../components/Donate';
 import { AboutArticle } from '../components/articles/AboutArticle';
 import { CommunityArticle } from '../components/articles/CommunityArticle';
@@ -11,45 +11,44 @@ import { HostingRefugees } from '../components/articles/HostingRefugees';
 import { Infographics } from '../components/articles/Infographics/Infographics';
 import { IconsArticle } from '../components/articles/Icons/IconsArticle';
 
-export const HomePage = () => (
-  <div className="home-page">
-    <img
-      src={trainColorful}
-      alt="5peron picture"
-      className="peron-image"
-    />
+export const HomePage = () => {
+  const hasWindow = typeof window !== 'undefined';  
 
-    <img
-      src={trainWide}
-      alt="5peron picture"
-      className="peron-image-wide"
-    />
+  return (
+    <div className="home-page">
+      <section className="banner">
+        <img
+          src={hasWindow && (window.innerWidth > 768) ? trainWide : trainColorful}
+          alt="5peron picture"
+          className="banner-image"
+        />
+      </section>
+      <section className="about">
+        <AboutArticle />
 
-    <section className="about">
-      <AboutArticle />
+        <IconsArticle />
 
-      <IconsArticle />
+        <Infographics />
 
-      <Infographics />
+        <HostingRefugees />
 
-      <HostingRefugees />
+        <article id="team">
+          <h2>Team</h2>
+          <img src={team} alt="Team picture" />
+        </article>
 
-      <article id="team">
-        <h2>Team</h2>
-        <img src={team} alt="Team picture" />
-      </article>
+        <article>
+          <h2>Team</h2>
+          <img src={teamZhenia} alt="Team picture: Zhenia" />
+        </article>
 
-      <article>
-        <h2>Team</h2>
-        <img src={teamZhenia} alt="Team picture: Zhenia" />
-      </article>
+        <CommunityArticle />
 
-      <CommunityArticle />
-
-      <article id="donate">
-        <h2>Donate</h2>
-        <Donate />
-      </article>
-    </section>
-  </div>
-);
+        <article id="donate">
+          <h2>Donate</h2>
+          <Donate />
+        </article>
+      </section>
+    </div>
+  );
+};

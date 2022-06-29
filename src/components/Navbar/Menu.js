@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import './Menu.css';
 import { useOutsideClick } from './useOutsideClick';
-import logo from './train-station-icon.jpg';
+import logo from './logo_svg.svg';
 import { SocialLinks } from  '../SocialLinks';
 
 export const Menu = ({ isOpen, onClose }) => {

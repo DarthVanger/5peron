@@ -1,7 +1,8 @@
 img.logo {
   display: block;
-  height: 56px;
-  margin-bottom: 1em;
+  height: 100%;
+  width: auto;
+  margin: 0;
 }
 
 aside {

@@ -1,23 +1,22 @@
 nav, .nav-placeholder {
-    height: 4.75rem;
+    height: 11rem;
 }
 
 .fixed-nav {
   position: fixed;
+  padding: 24px 150px 24px 150px;
   top: 0;
   right: 0;
   left: 0;
 }
 
 .top-nav {
-  padding: 0;
   box-sizing: border-box;
   display: flex;
   -webkit-box-pack: center;
-  background-color: rgb(255, 255, 255);
+  background-color: #042A3C;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   align-items: stretch;
-  padding-right: 1em;
 }
 
 .menu-svg {
@@ -31,7 +30,7 @@ nav, .nav-placeholder {
 }
 
 .menu-button {
-  background: white;
+  float: right;
   outline: none;
   box-shadow: none;
   border: none;
@@ -45,10 +44,8 @@ nav, .nav-placeholder {
 }
 
 .logo-container {
-  background: white;
-  margin: 0.5rem;
+  margin: 0;
 }
-
 
 .logo-link {
     text-decoration: none;
@@ -62,10 +59,13 @@ nav, .nav-placeholder {
   font-size: 2em;
   font-family: monospace;
   align-self: center;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav-right {
-  align-self: center;
-  height: 36px;
-  width: 36px;
+  align-self: flex-end;
+  height: auto;
+  width: 100%;
+  display: block;
 }
